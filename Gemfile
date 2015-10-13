@@ -1,6 +1,9 @@
+
+source "https://www.rubygems.org"
+
 gem 'rspec'
-gem 'sauce', '~> 3.5.6'
-gem 'sauce-connect'
+gem 'sauce_whisk'
 gem 'capybara'
 gem 'parallel_tests'
 gem 'require_all'
+gem 'selenium-webdriver'
