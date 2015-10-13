@@ -1,6 +1,5 @@
-require "sauce/capybara"
+require "sauce_whisk"
 require "capybara/rspec"
-
 require "capybara"
 
 Capybara.register_driver :selenium do |app|
@@ -16,7 +15,7 @@ Capybara.register_driver :selenium do |app|
                                  :browser => :remote, :url => url,
                                  :desired_capabilities => capabilities)
 end
-Capybara.default_wait_time = 10
+Capybara.default_max_wait_time = 10
 Capybara.current_driver = :selenium
 
 
